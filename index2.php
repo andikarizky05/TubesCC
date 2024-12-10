@@ -59,7 +59,8 @@ if (isset($_POST["search"])) {
     <!-- - google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -118,7 +119,8 @@ if (isset($_POST["search"])) {
                                                 <div class="menu-title-flex">
                                                     <!-- <img src="./assets/images/icons/dress." alt="clothes" width="20" height="20" class="menu-title-img"> -->
                                                     <input type="hidden" name="merk" value="<?= $fetch_mobil['merek']; ?>">
-                                                    <a class="menu-title" href="merek.php?brand=<?= $fetch_mobil['merek']; ?>"><?= $fetch_mobil['merek']; ?></a>
+                                                    <a class="menu-title"
+                                                        href="merek.php?brand=<?= $fetch_mobil['merek']; ?>"><?= $fetch_mobil['merek']; ?></a>
                                                 </div>
                                             </form>
 
@@ -170,7 +172,7 @@ if (isset($_POST["search"])) {
 
                 </div>
                 <?php
-                
+
                 // Tampilkan pesan kesalahan jika ada
                 if (isset($_SESSION["error_message"])) {
                     echo "<div class='error'>{$_SESSION["error_message"]}</div>";
@@ -198,8 +200,10 @@ if (isset($_POST["search"])) {
                                             <!-- gawe post (array key) -->
                                             <input type="hidden" name="pid" value="<?= $fetch_mobil['id']; ?>">
                                             <input type="hidden" name="name" value="<?= $fetch_mobil['nama_mobil']; ?>">
-                                            <img src="/<?= $fetch_mobil['gambar']; ?>" alt="mobel" width="300" class="product-img default">
-                                            <img src="/<?= $fetch_mobil['gambar']; ?>" alt="mobel" width="300" class="product-img hover">
+                                            <img src="/<?= $fetch_mobil['gambar']; ?>" alt="mobel" width="300"
+                                                class="product-img default">
+                                            <img src="/<?= $fetch_mobil['gambar']; ?>" alt="mobel" width="300"
+                                                class="product-img hover">
                                             <input type="hidden" name="merek" value="<?= $fetch_mobil['merek']; ?>">
 
 
@@ -208,7 +212,8 @@ if (isset($_POST["search"])) {
                                             <div href="detail_mobil.php?id=<?= $fetch_mobil['id']; ?>" class="showcase-actions">
 
                                                 <a href="detail_mobil.php?id=<?= $fetch_mobil['id']; ?>" class="btn-action">
-                                                    <ion-icon href="detail_mobil.php?id=<?= $fetch_mobil['id']; ?>" name="eye-outline"></ion-icon>
+                                                    <ion-icon href="detail_mobil.php?id=<?= $fetch_mobil['id']; ?>"
+                                                        name="eye-outline"></ion-icon>
                                                 </a>
                                             </div>
                                         </div>
